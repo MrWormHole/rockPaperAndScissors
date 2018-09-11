@@ -4,6 +4,14 @@
 using namespace std;
 using namespace sf;
 
+//Few honest words from programmer
+//Client side may get packet extraction errors in every 3-4 turns.
+//I assume it is because of we are trying client to connect and server to listen in each turn which is obviously very bad example
+//You can seperate the code below into Server And Client classes and get rid of that error.However i wanted to keep them under same roof
+//Since it is very useful to learn for beginners
+//Author: MrWormHole (Talha Altınel)
+
+//utility
 void convertStringToLowercase(string& s) {
 	locale loc;
 	for (string::size_type i = 0; i < s.length(); i++) {
